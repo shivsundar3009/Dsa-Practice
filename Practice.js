@@ -24,4 +24,26 @@ function sumOfFirstNNumbers(n) {
   // Example usage:
   console.log(sumOfFirstNNumbers(5)); // 15 (1 + 2 + 3 + 4 + 5)
   console.log(sumOfFirstNNumbers(10)); // 55 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10)
+
+
+
+  // write a function to find product of first n natural number
+
+  function productOfFirstNNaturalNumbers(n) {
+  if (n < 0) {
+    return "Invalid input. Please provide a non-negative integer.";
+  }
   
+  let product = 1;
+  
+  for (let i = 1; i <= n; i++) {
+    product *= i;
+  }
+  
+  return product;
+}
+
+// Example usage:
+const n = 5;
+const result = productOfFirstNNaturalNumbers(n);
+console.log(`The product of the first ${n} natural numbers is ${result}`);
