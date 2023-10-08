@@ -1,4 +1,4 @@
-// write a function that checks if given number is a multiple of both 3 and 5
+// question 01  write a function that checks if given number is a multiple of both 3 and 5
 
 isNumMultipleOf3And5 = (num) => {
   return num % 15 === 0
@@ -7,7 +7,7 @@ isNumMultipleOf3And5 = (num) => {
 console.log(isNumMultipleOf3And5(25));
 
 
-// write a function that gives sum of n numbers from 1
+// question 02 write a function that gives sum of n numbers from 1
 
 function sumOfFirstNNumbers(n) {
   if (n <= 0) {
@@ -27,7 +27,7 @@ console.log(sumOfFirstNNumbers(10)); // 55 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 
 
 
 
-// write a function to find product of first n natural number
+// question 03 write a function to find product of first n natural number
 
 function productOfFirstNNaturalNumbers(n) {
   if (n < 0) {
@@ -50,7 +50,7 @@ console.log(`The product of the first ${n} natural numbers is ${result}`);
 
 
 
-// write a function that checks if given number is a prime number 
+// question 05 write a function that checks if given number is a prime number 
 
 
 function isPrime(number) {
@@ -74,3 +74,24 @@ console.log(isPrime(2));  // Output: true (2 is a prime number)
 console.log(isPrime(4));  // Output: false (4 is not a prime number)
 console.log(isPrime(17)); // Output: true (17 is a prime number)
 console.log(isPrime(1));  // Output: false (1 is not a prime number)
+
+
+// question 05 print string of words in reverse order
+
+function reverseStringWords(inputString) {
+  // Split the input string into an array of words
+  const wordsArray = inputString.split(' ');
+
+  // Reverse the order of the array elements
+  const reversedArray = wordsArray.reverse();
+
+  // Join the elements of the reversed array back into a single string
+  const reversedString = reversedArray.join(' ');
+
+  // Print the reversed string
+  console.log(reversedString);
+}
+
+// Example usage
+const inputString = "Hello World";
+reverseStringWords(inputString); // Outputs: "World Hello"
