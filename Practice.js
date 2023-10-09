@@ -95,3 +95,28 @@ function reverseStringWords(inputString) {
 // Example usage
 const inputString = "Hello World";
 reverseStringWords(inputString); // Outputs: "World Hello"
+
+
+// question 06 given a string reverse each word in the sentence in javascript
+
+function reverseWordsInSentence(sentence) {
+  // Split the sentence into words
+  const words = sentence.split(' ');
+
+  // Reverse each word and store them in a new array
+  const reversedWords = words.map(word => {
+    // Use the `split('')` method to split the word into an array of characters,
+    // then use `reverse()` to reverse the characters, and finally `join('')` to join them back into a word.
+    return word.split('').reverse().join('');
+  });
+
+  // Join the reversed words back into a sentence
+  const reversedSentence = reversedWords.join(' ');
+
+  return reversedSentence;
+}
+
+// Example usage:
+const sentence = "Hello world";
+const reversed = reverseWordsInSentence(sentence);
+console.log(reversed); // Output: "olleH dlrow"
