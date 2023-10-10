@@ -120,3 +120,24 @@ function reverseWordsInSentence(sentence) {
 const sentence = "Hello world";
 const reversed = reverseWordsInSentence(sentence);
 console.log(reversed); // Output: "olleH dlrow"
+
+
+// question 6 write a function to ccheck if given string is a palindrome
+
+function isPalindrome(str) {
+  // Remove non-alphanumeric characters and convert to lowercase
+  const cleanStr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+  
+  // Compare the cleaned string with its reverse
+  const reversedStr = cleanStr.split('').reverse().join('');
+  
+  return cleanStr === reversedStr;
+}
+
+// Example usage:
+const inputString = "A man, a plan, a canal, Panama";
+if (isPalindrome(inputString)) {
+  console.log(`${inputString} is a palindrome.`);
+} else {
+  console.log(`${inputString} is not a palindrome.`);
+}
