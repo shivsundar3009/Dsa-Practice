@@ -122,7 +122,7 @@ const reversed = reverseWordsInSentence(sentence);
 console.log(reversed); // Output: "olleH dlrow"
 
 
-// question 6 write a function to ccheck if given string is a palindrome
+// question 07 write a function to ccheck if given string is a palindrome
 
 function isPalindrome(str) {
   // Remove non-alphanumeric characters and convert to lowercase
@@ -141,3 +141,12 @@ if (isPalindrome(inputString)) {
 } else {
   console.log(`${inputString} is not a palindrome.`);
 }
+
+// question 08  How do you add an element to the end of an array?
+Answer: You can add an element to the end of an array using the push() method. For example:
+
+let arr = [1, 2, 3];
+
+arr.push(4);
+
+console.log(arr); // [1, 2, 3, 4]
